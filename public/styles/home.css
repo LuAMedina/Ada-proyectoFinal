@@ -1,0 +1,190 @@
+main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .counter {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 7.5rem;
+    display: flex;
+    align-items: center;
+}
+
+main .counter p {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 2px;
+    margin-left: 10px;
+}
+
+main .contain-cards {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 3.5rem;
+}
+
+main .contain-cards .card {
+    background-color: white;
+    border-radius: 2px;
+    width: 90%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.34);
+    margin: 20px 0;
+}
+
+main .contain-cards .card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 2px 0 0 2px;
+}
+
+main .contain-cards .card .contain-info {
+    width: 100%;
+    height: 80%;
+}
+
+main .contain-cards .card .contain-info p {
+    font-size: 18px;
+    margin-left: 1rem;
+}
+
+main .contain-cards .card .contain-info .name {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main .contain-cards .card .more {
+    width: 100%;
+    height: 20%;
+}
+
+main .contain-cards .card .more a {
+    color: orange;
+    font-size: 18px;
+    margin-left: 1rem;
+}
+
+main .pages {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    bottom: -660rem;
+}
+
+main .pages .contain-buttons button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3px;
+    border: solid 3px greenyellow;
+}
+
+main .pages .contain-buttons .desactived {
+    border: rgb(78, 76, 76);
+    color: rgb(78, 76, 76);
+}
+
+@media (min-width: 768px) {
+
+    main .contain-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: 200px;
+    }
+    
+    main .contain-cards .card {
+        width: 40%;
+        height: 70%;
+    }
+
+    main .contain-cards .card .contain-info p {
+        font-size: 16px;
+    }
+    
+    main .contain-cards .card .contain-info .name {
+        font-size: 20px;
+    }
+
+    main .pages {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        bottom: -300rem;
+    }
+
+    main .pages .pages-counter {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    main .contain-cards .card {
+        width: 22%;
+        height: 90%;
+        transition: all ease-in-out .5s;
+    }
+
+    main .contain-cards .card:hover {
+        box-shadow: 10px 10px 24px 12px rgba(115,110,115,1);
+        transform: scale(1.1);
+    }
+
+    main .contain-cards .card img {
+        width: 100%;
+        height: 45%;
+        border-radius: 2px 0 0 2px;
+    }
+
+    main .pages {
+        position: absolute;
+        bottom: -165rem;
+    }
+
+    main .pages .contain-buttons button:hover {
+        cursor: pointer;
+    }
+
+    main .pages .contain-buttons .desactived:hover {
+        cursor: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    main .contain-cards .card {
+        width: 22%;
+        height: 70%;
+        margin: 20px 10px;
+    }
+
+    main .contain-cards .card img {
+        width: 100%;
+        height: 50%;
+        border-radius: 2px 0 0 2px;
+    }
+
+    main .pages {
+        position: absolute;
+        bottom: -95rem;
+    }
+}

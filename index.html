@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/07bcbee647.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/styles/style.css">
+    <link rel="shortcut icon" href="./public/images/icon.png">
+    <title>Rick and Morty</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <a href="./index.html">
+                <img src="./public/images/Rick-and-Morty.png" alt="Not found">
+            </a>
+        </div>
+        <div class="menu">
+            <div class="menuIcon">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </div>
+            <div class="containFilters active" id="contFilters">
+                <ul class="filters">
+                    <li><button class="filter-item" id="filter-All">All</button></li>
+                    <li><button class="filter-item" id="filter-Male">Male</button></li>
+                    <li><button class="filter-item" id="filter-Female">Female</button></li>
+                    <li><button class="filter-item" id="filter-Genderless">Genderless</button></li>
+                    <li><button class="filter-item" id="filter-Unknown">Unknown</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="counter">
+            <p>Total de personajes: 826</p>
+        </section>
+        <section class="contain-cards">
+           <!---- <div class="card">
+                <img src=${character.image} alt=${character.name}>
+                <div class="contain-info">
+                    <p class="name">${character.name}</p>
+                    <p class="gender">Gender: ${character.gender}</p>
+                    <p class="species">Specie: ${character.species}</p>
+                    <p class="status">Status: ${character.status}</p>
+                    <p class="origin">Origin: ${character.origin.name}</p>
+                    <p class="location">Location: ${character.location.name}</p>
+                </div>
+                <div class="more">
+                    <a href="*">Ver más...</a>
+                </div>
+            </div> -->
+        </section>
+        <section class="pages">
+            <div class="pages-counter">
+                <p>Total de paginas: 42</p>
+            </div>
+            <div class="contain-buttons">
+                <button id="init-page"><<</button>
+                <button id="prev-page"><</button>
+                <button id="next-page">></button>
+                <button id="last-page">>></button>
+            </div>
+        </section>
+        <script src="./app.js"></script>
+    </main>
+    <footer>
+        <h2>Footer</h2>
+        <p>© 2022 Copyright - Proyecto Final Ada</p>
+    </footer>
+</body>
+</html>
